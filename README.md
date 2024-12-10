@@ -1,2 +1,3 @@
 # menggongchang
 Android梦工厂管理系统
+Androidstudio新建项目替换app文件夹即可
