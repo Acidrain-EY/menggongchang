@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_image2">
+
+    <!-- 区域选择 -->
+    <Spinner
+        android:id="@+id/spinner_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/select_area" />
+
+    <!-- 位置选择 -->
+    <Spinner
+        android:id="@+id/spinner_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:prompt="@string/select_position" />
+
+    <!-- 物品选择 -->
+    <Spinner
+        android:id="@+id/spinner_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:prompt="@string/select_item" />
+
+    <!-- 查询按钮 -->
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_background_primary"/>
+</LinearLayout>

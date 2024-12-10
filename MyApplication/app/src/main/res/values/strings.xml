@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <!-- 区域选择提示 -->
+    <string name="select_area">请选择区域</string>
+
+    <string name="select_position">请选择位置</string>
+    <string name="select_item">请选择物品</string>
+
+</resources>

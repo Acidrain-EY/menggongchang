@@ -1,0 +1,63 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_image2">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <!-- 欢迎管理员 -->
+    <TextView
+        android:id="@+id/tv_greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你好，管理员！"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"/>
+    <!-- 查询物品按钮 -->
+    <Button
+        android:id="@+id/btn_query_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询物品"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background_primary"/>
+
+    <!-- 添加物品按钮 -->
+    <Button
+        android:id="@+id/btn_add_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加物品"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background_primary"/>
+
+    <!-- 查询单个物品按钮 -->
+    <Button
+        android:id="@+id/btn_query_single_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询单个物品"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background_primary"/>
+
+    <!-- 退出登录按钮 -->
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出登录"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background_primary"/>
+</LinearLayout>
+

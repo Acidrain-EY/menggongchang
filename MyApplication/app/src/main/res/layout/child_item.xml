@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+    <TextView
+        android:id="@+id/borrowerPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="电话"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:paddingBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/borrowerEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="邮箱"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:paddingBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/borrowTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="借出时间"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:paddingBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/expectedDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="预计归还天数"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:paddingBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="状态"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:paddingBottom="4dp"/>
+
+</LinearLayout>

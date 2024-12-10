@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 权限声明 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 指定应用使用摄像头的特性 -->
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+
+        <!-- 主活动 -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 查询活动 -->
+        <activity
+            android:name=".QueryActivity"
+            android:launchMode="singleTask" />
+
+        <!-- 显示物品活动 -->
+        <activity android:name=".DisplayActivity" />
+
+        <!-- 添加物品活动 -->
+        <activity android:name=".AddItemActivity" />
+
+        <activity android:name=".SearchItemByIdActivity" />
+
+        <activity android:name=".QRCodeDisplayActivity" />
+
+        <activity android:name=".AdminMainActivity" />
+
+        <activity android:name=".UserMainActivity" />
+
+        <activity android:name=".AdminLoginActivity" />
+
+        <activity android:name=".UserRegisterActivity" />
+
+        <activity android:name=".UserLoginActivity" />
+
+        <activity android:name=".ShowUserIdActivity" />
+
+        <activity android:name=".BorrowActivity" />
+
+        <activity android:name=".BorrowReturnActivity" />
+
+        <activity android:name=".QRCodeScannerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name=".MyCaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!-- FileProvider 配置 -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.myapplication.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

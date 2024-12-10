@@ -1,0 +1,68 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_image">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        />
+
+    <!-- 登录方式选择 -->
+    <RadioGroup
+        android:id="@+id/radio_group_login_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radio_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号登录"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radio_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邮箱登录" />
+
+        <RadioButton
+            android:id="@+id/radio_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号登录" />
+    </RadioGroup>
+
+    <!-- 输入框 -->
+    <EditText
+        android:id="@+id/et_login_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入账号"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 密码输入框 -->
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 登录按钮 -->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background_primary"/>
+
+</LinearLayout>

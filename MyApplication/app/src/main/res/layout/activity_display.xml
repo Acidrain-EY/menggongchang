@@ -1,0 +1,76 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_image2">
+
+    <ImageView
+        android:id="@+id/iv_item_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_image" /> <!-- 默认图片 -->
+
+    <TextView
+        android:id="@+id/tv_data_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_borrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="借出"
+        android:textSize="16sp"
+        android:background="@drawable/button_background_primary"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:elevation="4dp"/>
+
+    <Button
+        android:id="@+id/btn_show_borrow_return"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看借出/归还信息"
+        android:textSize="16sp"
+        android:background="@drawable/button_background_primary"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:elevation="4dp"/>
+
+    <Button
+        android:id="@+id/btn_return"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="归还"
+        android:textSize="16sp"
+        android:background="@drawable/button_background_primary"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:elevation="4dp"/>
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除物品"
+        android:textSize="16sp"
+        android:background="@drawable/button_background_primary"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:elevation="4dp"
+        />  <!-- 初始状态为隐藏 -->
+
+</LinearLayout>
